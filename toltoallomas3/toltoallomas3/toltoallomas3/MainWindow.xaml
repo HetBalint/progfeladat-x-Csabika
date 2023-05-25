@@ -1,0 +1,19 @@
+﻿<Window x:Class="JarmuFogyasztas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Jármű Fogyasztás" Height="250" Width="400">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20">
+            <Label Content="Jármű fajta:" />
+            <ComboBox x:Name="ComboBoxFajta" SelectedIndex="-1">
+                <ComboBoxItem Content="Autó" />
+                <ComboBoxItem Content="Kerékpár" />
+                <ComboBoxItem Content="Roller" />
+            </ComboBox>
+            <Label Content="Fogyasztás (kWh/100km):" />
+            <TextBox x:Name="TextBoxFogyasztas" />
+            <Button Content="Hozzáad" Click="ButtonHozzaad_Click" />
+            <Button Content="Kiír" Click="ButtonKiir_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
